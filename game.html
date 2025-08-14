@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DSA Mini Games</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#E7EFC7] min-h-screen">
+  <header class="py-8">
+    <h1 class="text-4xl font-extrabold text-center text-[rgb(26,26,25)]">DSA Learning Mini Games</h1>
+    <p class="text-center text-[rgb(26,26,25)] mt-2">Play with classic data structures & algorithms</p>
+  </header>
+
+  <!-- Cards -->
+  <main class="container mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <button class="bg-white rounded-2xl shadow p-6 text-left hover:shadow-lg transition"
+              onclick="showGame('sorting')">
+        <h2 class="text-xl font-semibold text-[rgb(49,81,30)]">Sorting Race</h2>
+        <p class="text-[rgb(26,26,25)] mt-2">Bubble • Selection • Insertion — step-by-step </p>
+      </button>
+
+      <button class="bg-white rounded-2xl shadow p-6 text-left hover:shadow-lg transition"
+              onclick="showGame('floodfill')">
+        <h2 class="text-xl font-semibold text-[rgb(49,81,30)]">Flood Fill Puzzle</h2>
+        <p class="text-[rgb(26,26,25)] mt-2">Fill the grid with one color using BFS in the fewest moves</p>
+      </button>
+
+      <button class="bg-white rounded-2xl shadow p-6 text-left hover:shadow-lg transition"
+              onclick="showGame('bst')">
+        <h2 class="text-xl font-semibold text-[rgb(49,81,30)]">BST Visualizer</h2>
+        <p class="text-[rgb(26,26,25)] mt-2">Insert/Search & see the tree drawn live</p>
+      </button>
+
+      <button class="bg-white rounded-2xl shadow p-6 text-left hover:shadow-lg transition"
+              onclick="showGame('linked')">
+        <h2 class="text-xl font-semibold text-[rgb(49,81,30)]">Linked List Visualizer</h2>
+        <p class="text-[rgb(26,26,25)] mt-2">Append/Prepend/Delete & watch the nodes update</p>
+      </button>
+
+      <button class="bg-white rounded-2xl shadow p-6 text-left hover:shadow-lg transition"
+              onclick="showGame('paren')">
+        <h2 class="text-xl font-semibold text-[rgb(49,81,30)]">Parenthesis Matcher</h2>
+        <p class="text-[rgb(26,26,25)] mt-2">Stack-based balanced parentheses checker</p>
+      </button>
+    </div>
+
+    <section id="gameContainer" class="mt-8"></section>
+  </main>
+
+  <footer class="h-12">
+    
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
