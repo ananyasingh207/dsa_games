@@ -183,7 +183,7 @@ function floodFillView() {
       </div>
 
       <div class="border border-[rgb(26,26,25)] rounded p-4 bg-[rgb(246,252,223,0)]">
-        <div id="grid" class="grid grid-cols-10 gap-[1px] w-[360px] h-[360px]"></div>
+        <div id="grid" class="grid grid-cols-10 gap-[1px] w-full max-w-[min(90vw,90vh)] aspect-square mx-auto"></div>
       </div>
 
       <pre class="mt-4 bg-[rgb(240,240,240)] p-3 rounded text-sm text-[rgb(26,26,25)] overflow-x-auto">
@@ -195,7 +195,6 @@ function floodFillView() {
   - Check its four neighbors (up, down, left, right).
   - If a neighbor has the old color, add it to the queue.
 - Keep doing this until no connected cells with the old color are left.
-
       </pre>
     </div>
   `;
@@ -632,3 +631,4 @@ function bootParen() {
     res.className = `mt-3 text-lg font-bold ${ok ? 'text-[rgb(26,26,25)]' : 'text-[rgb(26,26,25)]'}`;
   };
 }
+
