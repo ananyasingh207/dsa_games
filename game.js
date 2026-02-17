@@ -1,4 +1,3 @@
-
 const container = document.getElementById('gameContainer');
 
 function showGame(id) {
@@ -587,7 +586,7 @@ function parenView() {
   return `
     <div class="bg-white rounded-2xl shadow p-6">
       <h2 class="text-2xl font-bold text-[rgb(49,81,30)]">Parenthesis Matcher</h2>
-      <p class="text-[rgb(26,26,25)] mb-4">Enter an expression — we’ll check if it's balanced using a stack.</p>
+      <p class="text-[rgb(26,26,25)] mb-4">Enter an expression, we’ll check if it's balanced using a stack.</p>
 
       <div class="flex gap-2">
         <input id="parenInput" class="border border-[rgb(26,26,25)] rounded px-3 py-2 flex-1 bg-[rgb(240,240,240)] text-[rgb(26,26,25)]"
